@@ -101,7 +101,6 @@ require_login();
 
             $stmt = $db->query('SELECT s1.*, s2.title as parent_title FROM sections s1 LEFT JOIN sections s2 ON s1.parent_id = s2.id');
             $sections = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
             ?>
 
             <table class="table">
