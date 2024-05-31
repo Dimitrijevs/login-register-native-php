@@ -7,10 +7,9 @@ require_login();
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <?php
+    include 'components/head.php';
+    ?>
     <title>Profile page</title>
 </head>
 
@@ -29,7 +28,7 @@ require_login();
     include 'components/header.php'
     ?>
 
-    <div class="container my-5">
+    <div class="container my-5 h-70">
         <div class="">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <h2>Sections</h2>
